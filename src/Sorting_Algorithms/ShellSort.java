@@ -6,7 +6,7 @@ public class ShellSort {
     public static void main(String[] args) {
         int[] intArray = {6, 9, -1, 10, 10, 19, 2, 1, 17};
 
-        // This Shell Sort implementation doesn't follow Dr. Knuth's idea of finding a gap
+        // This Shell Sort implementation doesn't follow Dr. Knuth's idea of finding a gap,
         // rather, the gap is half of the size of the length of the array each round
         // until it gets to 0 where it then uses insertion sort
 
