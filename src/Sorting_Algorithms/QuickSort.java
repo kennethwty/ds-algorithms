@@ -16,7 +16,6 @@ public class QuickSort {
     // i: start index - starts scanning from left to right
     // j: end index - starts right to left
     // We can also use a shuffle method to shuffle the array into random order prior to sorting
-    //
     public static void quicksort(int[] arr, int i, int j) {
         // make sure there is more than one element
         if(j - i < 2)
