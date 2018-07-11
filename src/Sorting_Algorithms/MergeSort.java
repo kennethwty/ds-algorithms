@@ -47,7 +47,7 @@ public class MergeSort {
 
         while(i < mid && j < end) {
             // comparing the two sub-arrays to find the smaller element and it gets copied to the temp array
-            temp[index++] = arr[i] < arr[j] ? arr[i++] : arr[j++];
+            temp[index++] = arr[i] <= arr[j] ? arr[i++] : arr[j++];
         }
 
         // if there are leftovers in the right sub-array, do nothing
