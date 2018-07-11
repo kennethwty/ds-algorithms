@@ -6,6 +6,7 @@ Reviewing common algorithms & data structures by implementing them in Java.<br><
 2) Algorithms, 4th Edition, by Robert Sedgewick & Kevin Wayne <br>
 3) Cracking the Coding Interview, 6th Edition, by Gayle Laakmann Mcdowell <br>
 4) The Algorithm Design Manual, 2nd Edition, by Steven Skiena
+<br>
 <strong>Online Resources:</strong>
 <br>
 1) Data Structures and Algorithms: Deep Dive Using Java, by Sarah Ettritch on Udemy <br>
