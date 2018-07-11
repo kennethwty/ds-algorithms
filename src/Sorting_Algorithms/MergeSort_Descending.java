@@ -17,7 +17,8 @@ public class MergeSort_Descending {
         // if there is only one element, it is sorted
         if(end - start < 2)
             return;
-        int mid = (end - start) / 2;
+
+        int mid = (start + end) / 2;
         mergesort_descend(input, start, mid);
         mergesort_descend(input, mid, end);
         merge(input, start, mid, end);
