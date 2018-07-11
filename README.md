@@ -8,7 +8,7 @@ Reviewing common algorithms & data structures by implementing them in Java.<br><
 4) The Algorithm Design Manual, 2nd Edition, by Steven Skiena
 <br>
 <strong>Online Resources:</strong>
-<br>
+<br><br>
 1) Data Structures and Algorithms: Deep Dive Using Java, by Sarah Ettritch on Udemy <br>
 2) Algorithms, by Robert Sedgewick & Kevin Wayne on Coursera <br>
 3) Algorithms: Design and Analysis, by Tim Roughgarden on Stanford Lagunita <br>
