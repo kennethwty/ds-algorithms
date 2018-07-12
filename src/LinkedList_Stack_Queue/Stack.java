@@ -34,14 +34,14 @@ public class Stack<Item> implements Iterable<Item> {
         return new StackIterator();
     }
 
-private class StackIterator implements Iterator<Item> {
-    private Node cur = top;
-    public boolean hasNext() { return cur != null; }
-    public Item next() {
-        Item item = (Item)cur.item;
-        cur = cur.next;
-        return item;
+    private class StackIterator implements Iterator<Item> {
+        private Node cur = top;
+        public boolean hasNext() { return cur != null; }
+        public Item next() {
+            Item item = (Item)cur.item;
+            cur = cur.next;
+            return item;
+        }
+        public void remove() { } //leave it empty
     }
-    public void remove() { } //leave it empty
-}
 }
