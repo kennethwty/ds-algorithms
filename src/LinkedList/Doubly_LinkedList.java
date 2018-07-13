@@ -34,6 +34,29 @@ public class Doubly_LinkedList<Item> {
         head = newNode;
     }
 
+    /**
+     * This method adds a new node before a specified item
+     * @param beforeThis the new node will be placed before this node
+     * @param newItem the new node
+     */
+    public void addBefore(Item beforeThis, Item newItem) {
+        DoublyNode newNode = new DoublyNode();
+        newNode.item = newItem;
+        DoublyNode temp = head;
+        if(head.item.equals(beforeThis)) {
+            addFirst(newItem);
+            return;
+        }
+
+        while(!temp.next.item.equals(beforeThis)) {
+            temp = temp.next;
+        }
+        newNode.next = temp.next;
+        newNode.prev = temp;
+        temp.next.prev = newNode;
+        temp.next = newNode;
+    }
+
     // remove an item from the tail
     public void removeLast() {
         // no element
@@ -80,11 +103,22 @@ public class Doubly_LinkedList<Item> {
         list.addFirst("from");
         list.addFirst("Hello");
         list.addFirst("Hello");
+        // print the list
         list.printList();
+        // remove the extra "side" at the end
         list.removeLast();
         System.out.println();
         list.printList();
+        // remove the extra "Hello" at the front
         list.removeFirst();
+        System.out.println();
+        list.printList();
+        // add a phrase before hello
+        list.addBefore("Hello", "Let's Get it!");
+        System.out.println();
+        list.printList();
+        // add "other other" before "side"
+        list.addBefore("side", "other other");
         System.out.println();
         list.printList();
     }
