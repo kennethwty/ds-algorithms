@@ -43,12 +43,15 @@ public class Doubly_LinkedList<Item> {
         DoublyNode newNode = new DoublyNode();
         newNode.item = newItem;
         DoublyNode temp = head;
+        if(head == null) {
+            return;
+        }
         if(head.item.equals(beforeThis)) {
             addFirst(newItem);
             return;
         }
 
-        while(!temp.next.item.equals(beforeThis)) {
+        while(temp.next != null && !temp.next.item.equals(beforeThis)) {
             temp = temp.next;
         }
         newNode.next = temp.next;
@@ -119,6 +122,10 @@ public class Doubly_LinkedList<Item> {
         list.printList();
         // add "other other" before "side"
         list.addBefore("side", "other other");
+        System.out.println();
+        list.printList();
+        // add "or Hi!" before "from"
+        list.addBefore("from", "or Hi");
         System.out.println();
         list.printList();
     }
