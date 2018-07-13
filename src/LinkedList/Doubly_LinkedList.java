@@ -50,9 +50,13 @@ public class Doubly_LinkedList<Item> {
             addFirst(newItem);
             return;
         }
-
         while(temp.next != null && !temp.next.item.equals(beforeThis)) {
             temp = temp.next;
+        }
+        // assuming we can't add anything to the end
+        if(temp.next == null){
+            System.out.println("\nElement not found!");
+            return;
         }
         newNode.next = temp.next;
         newNode.prev = temp;
@@ -128,5 +132,7 @@ public class Doubly_LinkedList<Item> {
         list.addBefore("from", "or Hi");
         System.out.println();
         list.printList();
+        // when element is not on the list
+        list.addBefore("frommm", "or Hi");
     }
 }
