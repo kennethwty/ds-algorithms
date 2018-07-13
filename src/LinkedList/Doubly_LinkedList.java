@@ -46,7 +46,6 @@ public class Doubly_LinkedList<Item> {
             tail.prev.next = null;
             tail = tail.prev;
         }
-
     }
 
     // remove an item from the head
@@ -80,9 +79,12 @@ public class Doubly_LinkedList<Item> {
         list.addFirst("the");
         list.addFirst("from");
         list.addFirst("Hello");
+        list.addFirst("Hello");
         list.printList();
         list.removeLast();
-        //list.removeFirst();
+        System.out.println();
+        list.printList();
+        list.removeFirst();
         System.out.println();
         list.printList();
     }
