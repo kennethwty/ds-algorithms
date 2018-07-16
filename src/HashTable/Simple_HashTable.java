@@ -46,5 +46,7 @@ public class Simple_HashTable {
         }
 
         nameTable.printHash();
+
+        System.out.println("Retrieving Rose's First Name: " + nameTable.get("Rose"));
     }
 }
