@@ -135,7 +135,7 @@ public class HashTable_LinearProbing {
         System.out.println("Western Conference All-Stars Finalists");
         nameTable.put("Anthony", "Carmelo");
         nameTable.put("Curry", "Stephen");
-        nameTable.put("Paul", "Chris");
+        nameTable.put("Durant", "Kevin");
         nameTable.put("Davis", "Anthony");
         nameTable.put("Antetokounmpo", "Giannis");
         nameTable.put("Oladipo", "Victor");
