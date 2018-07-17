@@ -83,7 +83,7 @@ public class HashTable_LinearProbing {
                 System.out.print(name[i].firstName + " -> ");
             }
         }
-        System.out.println("Completed Seating the All-Stars");
+        System.out.println("Finished Seating the All-Stars");
     }
 
     public static void main(String[] args) {
