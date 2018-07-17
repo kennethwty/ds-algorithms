@@ -154,6 +154,6 @@ public class HashTable_LinearProbing {
 
         // error, list is full
         System.out.println();
-        nameTable.put("Wong", "Kenneth");
+        nameTable.put("Klay", "Thompson");
     }
 }
