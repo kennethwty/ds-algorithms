@@ -79,6 +79,16 @@ public class HashTable_LinearProbing {
 
         String playerFirstName = name[hashedKey].firstName;
         name[hashedKey] = null;
+
+        //re-hashing
+        StoredAllStars[] oldList = name;
+        name = new StoredAllStars[oldList.length];
+        for(int i = 0; i < oldList.length; i++) {
+            if(oldList[i] != null) {
+                put(oldList[i].lastName, oldList[i].firstName);
+            }
+        }
+
         return playerFirstName;
     }
 
