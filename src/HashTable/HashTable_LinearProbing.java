@@ -2,7 +2,7 @@ package HashTable;
 
 /**
  * This hash table implementation uses open addressing strategy to handle collision by looking for the next available slot
- * Also known as Linear Probing, since each increment is called a "Probe"
+ * Also known as Linear Probing
  */
 public class HashTable_LinearProbing {
     private StoredAllStars[] name;
