@@ -2,7 +2,7 @@ package HashTable;
 
 /**
  * This hash table implementation uses open addressing strategy to handle collision by looking for the next available slot
- * aka Linear Probing
+ * aka. Linear Probing
  */
 public class HashTable_LinearProbing {
     private StoredAllStars[] name;
@@ -83,7 +83,7 @@ public class HashTable_LinearProbing {
                 System.out.print(name[i].firstName + " -> ");
             }
         }
-        System.out.println("Finished Seating the All-Stars");
+        System.out.println("Completed Seating the All-Stars");
     }
 
     public static void main(String[] args) {
