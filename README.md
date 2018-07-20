@@ -12,6 +12,7 @@ Reviewing common algorithms & data structures by implementing them in Java.
 * Algorithms, by Robert Sedgewick & Kevin Wayne on Coursera <br>
 * Algorithms: Design and Analysis, by Tim Roughgarden on Stanford Lagunita <br>
 
+#### Note:
 My focus here is on experimentations with the concepts and codes and not to make it very performant or beautiful in any ways. It was simply meant to represent the concepts that I learned from the resources above.
 
 Feel free to use any of the codes in this repo.
