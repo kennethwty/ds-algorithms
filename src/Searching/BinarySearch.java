@@ -1,10 +1,12 @@
+package Searching;
+
 import java.util.Arrays;
 import java.util.Collections;
 
 public class BinarySearch {
     public static void main(String[] args) {
         int[] intArray = {1235, 1345, 64254, -33, 4374, 246, -9675, 256, 46, 27, -246, 357};
-        int search = -246; // at index 6
+        int search = -246;
 
         int result = interativeBinearySearch(intArray, search);
 
