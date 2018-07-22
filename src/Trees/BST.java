@@ -49,7 +49,7 @@ public class BST {
                 // and replace the current root with its value
                 subtreeRoot.setData(subtreeRoot.getRightChild().getMin());
 
-                // restructure the right substree
+                // restructure the right subtree
                 subtreeRoot.setRightChild(delete(subtreeRoot.getRightChild(), subtreeRoot.getData()));
             }
         }
