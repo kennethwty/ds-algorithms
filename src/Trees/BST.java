@@ -11,8 +11,17 @@ public class BST {
         }
     }
 
+    public void traverse() {
+        if(root == null) {
+            return;
+        } else {
+            root.traverse();
+        }
+    }
+
     public static void main(String[] args) {
         BST tree = new BST();
+
         tree.insert(35);
         tree.insert(25);
         tree.insert(15);
@@ -22,7 +31,9 @@ public class BST {
         tree.insert(95);
         tree.insert(5);
         tree.insert(65);
-        tree.insert(65);
+        tree.insert(65); // should be omitted
         tree.insert(105);
+
+        tree.traverse();
     }
 }

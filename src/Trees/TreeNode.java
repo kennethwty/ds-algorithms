@@ -33,6 +33,21 @@ public class TreeNode {
         }
     }
 
+    // in-order tree traversal
+    public void traverse() {
+        // traverse the left sub-tree
+        if(leftChild != null) {
+            leftChild.traverse();
+        }
+        // print the root at the level
+        System.out.print(data + " ");
+
+        // traverse the right sub-tree
+        if(rightChild != null) {
+            rightChild.traverse();
+        }
+    }
+
     public int getData() {
         return data;
     }
