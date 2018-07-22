@@ -23,7 +23,7 @@ public class BST {
         if(root != null) {
             return root.getMin();
         } else {
-            return -1;
+            return Integer.MIN_VALUE;
         }
     }
 
@@ -31,7 +31,7 @@ public class BST {
         if(root != null) {
             return root.getMax();
         } else {
-            return -1;
+            return Integer.MAX_VALUE;
         }
     }
 
