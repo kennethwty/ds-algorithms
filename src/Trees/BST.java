@@ -111,7 +111,14 @@ public class BST {
         tree.insert(20);
         tree.insert(105);
 
+        // in-order traversal
+        System.out.print("In-Order Traversal: ");
         tree.traverse();
+        System.out.println();
+
+        // pre-order traversal
+        System.out.print("Pre-Order Traversal: ");
+        tree.preTraverse();
 
         // retrieve value
         System.out.println();
@@ -129,11 +136,8 @@ public class BST {
         //tree.traverse();
 
         // delete value 35, which is the root of the entire tree and has both right and left subtrees
-        //tree.delete(35);
-        //tree.traverse();
-
-        // pre-order traversal
-        System.out.println();
-        tree.preTraverse();
+        System.out.print("Removing the root (35) : ");
+        tree.delete(35);
+        tree.traverse();
     }
 }
