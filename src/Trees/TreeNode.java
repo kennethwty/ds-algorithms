@@ -83,6 +83,19 @@ public class TreeNode {
         }
     }
 
+    // preorder traversal
+    public void preTraverse() {
+        // Visit and print root first
+        System.out.print(data + " ");
+        if(leftChild != null) {
+            leftChild.preTraverse();
+        }
+
+        if(rightChild != null) {
+            rightChild.preTraverse();
+        }
+    }
+
     public int getData() {
         return data;
     }

@@ -11,6 +11,7 @@ public class BST {
         }
     }
 
+    // basically means if the element is in the  tree
     public TreeNode get(int target) {
         if(root == null) {
             return null;
@@ -72,11 +73,22 @@ public class BST {
         }
     }
 
+    // In-order traversal method
     public void traverse() {
         if(root == null) {
             return;
         } else {
             root.traverse();
+        }
+    }
+
+    // Pre-order traversal
+    public void preTraverse() {
+        if(root == null) {
+            return;
+        } else {
+            // call the method in the TreeNode class
+            root.preTraverse();
         }
     }
 
@@ -117,7 +129,11 @@ public class BST {
         //tree.traverse();
 
         // delete value 35, which is the root of the entire tree and has both right and left subtrees
-        tree.delete(35);
-        tree.traverse();
+        //tree.delete(35);
+        //tree.traverse();
+
+        // pre-order traversal
+        System.out.println();
+        tree.preTraverse();
     }
 }
