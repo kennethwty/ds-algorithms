@@ -11,6 +11,30 @@ public class BST {
         }
     }
 
+    public TreeNode get(int target) {
+        if(root == null) {
+            return null;
+        } else {
+            return root.get(target);
+        }
+    }
+
+    public int getMin() {
+        if(root != null) {
+            return root.getMin();
+        } else {
+            return -1;
+        }
+    }
+
+    public int getMax() {
+        if(root != null) {
+            return root.getMax();
+        } else {
+            return -1;
+        }
+    }
+
     public void traverse() {
         if(root == null) {
             return;
@@ -35,5 +59,11 @@ public class BST {
         tree.insert(105);
 
         tree.traverse();
+
+        System.out.println();
+        System.out.println(tree.get(105));
+
+        System.out.println("Minimum: " + tree.getMin());
+        System.out.print("Maximum: " + tree.getMax());
     }
 }

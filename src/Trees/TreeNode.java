@@ -33,6 +33,41 @@ public class TreeNode {
         }
     }
 
+    // get data by returning a node
+    public TreeNode get(int target) {
+        if(data == target) {
+            return this;
+        }
+
+        // check the left sub-tree
+        if(target < data && leftChild != null) {
+            return leftChild.get(target);
+        } else if(target > data && rightChild != null) {
+            return rightChild.get(target);
+        }
+
+        // target value not found
+        return null;
+    }
+
+    public int getMin() {
+        // if the left sub-tree of the calling node is null, then itself is the min
+        if(leftChild == null) {
+            return data;
+        } else {
+            return leftChild.getMin();
+        }
+    }
+
+    public int getMax() {
+        // if the right sub-tree of the calling node is null, then itself is the min
+        if(rightChild == null) {
+            return data;
+        } else {
+            return rightChild.getMax();
+        }
+    }
+
     // in-order tree traversal
     public void traverse() {
         // traverse the left sub-tree
@@ -70,5 +105,9 @@ public class TreeNode {
 
     public void setRightChild(TreeNode rightChild) {
         this.rightChild = rightChild;
+    }
+
+    public String toString() {
+        return "Data: " + data;
     }
 }
