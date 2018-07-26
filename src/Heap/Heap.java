@@ -89,6 +89,20 @@ public class Heap {
         }
     }
 
+    // Heapsort Time Complexity: O(nlogn)
+    // Once heapsort is used, the heap array is no long a heap structure anymore
+    public void sort() {
+        // get the last index
+        int lastHeapIndex = size - 1;
+        for(int i = 0; i < lastHeapIndex; i++) {
+            int temp = heap[0];
+            heap[0] = heap[lastHeapIndex - i];
+            heap[lastHeapIndex - i] = temp;
+            // heapify the structure
+            heapifyBelow(0, lastHeapIndex - i - 1);
+        }
+    }
+
     // gets the parent index of a child node
     public int getParentIndex(int childIndex) {
         // find the parent node index using the formula: floor((i-1)/2)
@@ -120,15 +134,10 @@ public class Heap {
 
     public void printHeap() {
         System.out.print(Arrays.toString(heap));
-//        for (int i = 0; i < size; i++) {
-//            System.out.print(heap[i]);
-//            System.out.print("   ");
-//        }
-//        System.out.println();
     }
 
     public static void main(String[] args) {
-        Heap heap = new Heap(10);
+        Heap heap = new Heap(8);
 
         heap.insert(80);
         heap.insert(75);
@@ -143,10 +152,15 @@ public class Heap {
 
         System.out.println();
 
-        heap.delete(1);
-        heap.printHeap();
+        //heap.delete(1);
+        //heap.printHeap();
 
-        System.out.println();
-        System.out.print("Root Node: " + heap.peek());
+        //System.out.println();
+        //System.out.print("Root Node: " + heap.peek());
+
+        // Heapsort
+        heap.sort();
+
+        heap.printHeap();
     }
 }
