@@ -40,7 +40,6 @@ public class Heap {
             // heapify above
             heapifyAbove(targetIndex);
         }
-        heap[size - 1] = 0;
         size--;
         return deletedValue;
     }
@@ -133,11 +132,13 @@ public class Heap {
     }
 
     public void printHeap() {
-        System.out.print(Arrays.toString(heap));
+        for(int i = 0; i < size; i++) {
+            System.out.print(heap[i] + " ");
+        }
     }
 
     public static void main(String[] args) {
-        Heap heap = new Heap(8);
+        Heap heap = new Heap(10);
 
         heap.insert(80);
         heap.insert(75);
