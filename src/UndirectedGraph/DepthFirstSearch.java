@@ -1,5 +1,10 @@
 package UndirectedGraph;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Scanner;
+
 public class DepthFirstSearch {
     private boolean[] visited; // marks visited vertices
     private int counter; // counts the # of connected vertices
@@ -18,7 +23,7 @@ public class DepthFirstSearch {
     // DFS to go through all the vertices on the graph
     private void search(Graph graph, int source) {
         // mark the vertex as visited first
-        visited[source] == true;
+        visited[source] = true;
         counter++;
         // go through the adjacency list
         for(int v : graph.adjacencyList(source)) {
@@ -36,5 +41,30 @@ public class DepthFirstSearch {
 
     public int count() {
         return counter;
+    }
+
+    public static void main(String[] args) throws IOException {
+        // for user input
+        Scanner keyboard = new Scanner(System.in);
+        // create a Graph object first and read the file
+        Scanner scanner = new Scanner(new File("src/UndirectedGraph/test.txt"));
+        Graph undirectedGraph = new Graph(scanner);
+        System.out.print(undirectedGraph.toString());
+
+        // traversal from source entered by user, pass it the DepthFirstSearch class
+        System.out.println();
+        System.out.print("Please Enter a Source: ");
+        DepthFirstSearch dfs = new DepthFirstSearch(undirectedGraph, keyboard.nextInt());
+
+        for(int v = 0; v < undirectedGraph.getV(); v++) {
+            if (dfs.visited(v))
+                System.out.print(v + " ");
+        }
+        System.out.println();
+
+        // if the counter is different from the # of vertices, that means unconnected graph
+        if(dfs.count() != undirectedGraph.getV()) {
+                System.out.println("Not Connected");
+        }
     }
 }
