@@ -1,9 +1,9 @@
 package UndirectedGraph;
 
-import java.io.DataInputStream;
-import java.io.FileInputStream;
+import java.io.File;
 import java.io.IOException;
 import java.util.LinkedList;
+import java.util.Scanner;
 
 // Undirected Graph API
 public class Graph {
@@ -25,14 +25,14 @@ public class Graph {
     // the first element is the number of vertices
     // the second element is the number of edges
     // following that is a list of pairs of edges
-    public Graph(DataInputStream input) throws IOException {
-        this(input.readInt());
-        int edges = input.readInt();
+    public Graph(Scanner input) throws IOException {
+        this(input.nextInt());
+        int edges = input.nextInt();
         for(int i = 0; i < edges; i++) {
             // input vertices will be in the format of v1 v2
             // starting from 0 to V-1
-            int v1 = input.readInt();
-            int v2 = input.readInt();
+            int v1 = input.nextInt();
+            int v2 = input.nextInt();
             // add the edge to the list
             addEdge(v1, v2);
         }
@@ -73,8 +73,9 @@ public class Graph {
         return adjList[vertex];
     }
 
+    @Override
     public String toString() {
-        String str = V + " vertices, " + E + "edges.\n";
+        String str = V + " vertices, " + E + " edges.\n";
         for(int i = 0; i < V; i++) {
             str = str + i + ": ";
             for(int v2 : this.adjacencyList(i)) {
@@ -86,10 +87,8 @@ public class Graph {
     }
 
     public static void main(String[] args) throws IOException {
-        FileInputStream fstream = new FileInputStream(args[0]);
-        // Get the object of DataInputStream
-        DataInputStream in = new DataInputStream(fstream);
-        Graph undirectedGraph = new Graph(in);
-        System.out.println(undirectedGraph.toString());
+        Scanner scanner = new Scanner(new File("src/UndirectedGraph/test.txt"));
+        Graph undirectedGraph = new Graph(scanner);
+        System.out.print(undirectedGraph.toString());
     }
 }
