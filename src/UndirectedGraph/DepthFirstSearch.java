@@ -46,7 +46,7 @@ public class DepthFirstSearch {
     public static void main(String[] args) throws IOException {
         // for user input
         Scanner keyboard = new Scanner(System.in);
-        // create a Graph object first and read the file
+        // read the file and create a Graph object
         Scanner scanner = new Scanner(new File("src/UndirectedGraph/test.txt"));
         Graph undirectedGraph = new Graph(scanner);
         System.out.print(undirectedGraph.toString());
