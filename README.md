@@ -1,5 +1,5 @@
 # ds-algorithms
-Learning as well as reviewing common algorithms & data structures by implementing them in Java.
+Learning as well as reviewing important algorithms & data structures by implementing them in Java.
 
 ### Supplementary Books:
 * Introduction to Algorithms (CLRS), 3rd Edition, by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein
