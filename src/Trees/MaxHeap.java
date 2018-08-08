@@ -1,12 +1,12 @@
-package Heap;
+package Trees;
 
-// This is a Max Heap where parent nodes are equal to or greater than its children nodes
+// This is a Max MaxHeap where parent nodes are equal to or greater than its children nodes
 // This implementation is backed by an array
-public class Heap {
+public class MaxHeap {
     private int[] heap;
     int size;
 
-    public Heap(int heapSize) {
+    public MaxHeap(int heapSize) {
         heap = new int[heapSize];
     }
 
@@ -114,7 +114,7 @@ public class Heap {
     // peek method checks what's in the root
     public int peek() {
         if(isEmpty()) {
-            throw new IndexOutOfBoundsException("Heap is empty");
+            throw new IndexOutOfBoundsException("MaxHeap is empty");
         }
 
         return heap[0];
@@ -136,7 +136,7 @@ public class Heap {
     }
 
     public static void main(String[] args) {
-        Heap heap = new Heap(10);
+        MaxHeap heap = new MaxHeap(10);
 
         heap.insert(80);
         heap.insert(75);
