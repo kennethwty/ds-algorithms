@@ -1,7 +1,5 @@
 package Heap;
 
-import java.util.Arrays;
-
 // This is a Max Heap where parent nodes are equal to or greater than its children nodes
 // This implementation is backed by an array
 public class Heap {
