@@ -1,6 +1,6 @@
 package Trees;
 
-// This is a Max MaxHeap where parent nodes are equal to or greater than its children nodes
+// This is a MaxHeap where parent nodes are equal to or greater than its children nodes
 // This implementation is backed by an array
 public class MaxHeap {
     private int[] heap;
