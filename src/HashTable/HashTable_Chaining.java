@@ -63,7 +63,7 @@ public class HashTable_Chaining {
     public int hashKey(String lastName) {
         // return lastName.length() % starsTable.length;
         // Using the String class's hashCode method
-        return (lastName.hashCode() & 0x7fffffff) % starsTable.length);
+        return (lastName.hashCode() & 0x7fffffff) % starsTable.length;
     }
 
     public void printTable() {
