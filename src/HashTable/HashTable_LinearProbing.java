@@ -93,7 +93,7 @@ public class HashTable_LinearProbing {
     }
 
     private int hashKey(String lastName) {
-        return lastName.length() % name.length;
+        return （lastName.length() & 0x7fffffff） % name.length;
     }
 
     private boolean occupied(int index) {
