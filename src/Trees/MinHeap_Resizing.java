@@ -177,5 +177,7 @@ public class MinHeap_Resizing {
         System.out.println("Extracted Min Value: " + heap.extractMin());
 
         heap.printHeap();
+
+        System.out.println("\nRoot Node: " + heap.peek());
     }
 }
