@@ -57,12 +57,11 @@ public class MinHeap_Resizing {
 
     private void heapifyBelow() {
         int index = 0;
-        int minIndex;
         // while it has a child
         while(hasLeftChild(index)) {
-            minIndex = getLeftChildIndex(index);
+            int minIndex = getLeftChildIndex(index);
             // if it also has a right child and the right child's value is smaller than the left child
-            if(hasRightChild(index) && rightChildValue(index) < leftChildValue(minIndex)) {
+            if(hasRightChild(index) && rightChildValue(index) < leftChildValue(index)) {
                 minIndex = getRightChildIndex(index);
             }
 
