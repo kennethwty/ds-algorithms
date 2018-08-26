@@ -17,8 +17,8 @@ public class LL_AL_Vector_PerformanceComparison {
             arrayList.add(i);
         }
         long endTime = System.nanoTime();
-        long duration = endTime - startTime;
-        System.out.println("ArrayList add:  " + duration);
+        long timespan = endTime - startTime;
+        System.out.println("ArrayList add:  " + timespan);
 
         /* add() operation in LinkedList */
         startTime = System.nanoTime();
@@ -27,8 +27,8 @@ public class LL_AL_Vector_PerformanceComparison {
             linkedList.add(i);
         }
         endTime = System.nanoTime();
-        duration = endTime - startTime;
-        System.out.println("LinkedList add: " + duration);
+        timespan = endTime - startTime;
+        System.out.println("LinkedList add: " + timespan);
 
         /* add() operation in Vector */
         startTime = System.nanoTime();
@@ -37,8 +37,8 @@ public class LL_AL_Vector_PerformanceComparison {
             vector.add(i);
         }
         endTime = System.nanoTime();
-        duration = endTime - startTime;
-        System.out.println("Vector add: " + duration);
+        timespan = endTime - startTime;
+        System.out.println("Vector add: " + timespan);
 
         System.out.println();
 
@@ -49,8 +49,8 @@ public class LL_AL_Vector_PerformanceComparison {
             arrayList.get(i);
         }
         endTime = System.nanoTime();
-        duration = endTime - startTime;
-        System.out.println("ArrayList get:  " + duration);
+        timespan = endTime - startTime;
+        System.out.println("ArrayList get:  " + timespan);
 
         /* get() operation in LinkedList */
         startTime = System.nanoTime();
@@ -59,8 +59,8 @@ public class LL_AL_Vector_PerformanceComparison {
             linkedList.get(i);
         }
         endTime = System.nanoTime();
-        duration = endTime - startTime;
-        System.out.println("LinkedList get: " + duration);
+        timespan = endTime - startTime;
+        System.out.println("LinkedList get: " + timespan);
 
         /* get() operation in Vector */
         startTime = System.nanoTime();
@@ -69,8 +69,8 @@ public class LL_AL_Vector_PerformanceComparison {
             vector.get(i);
         }
         endTime = System.nanoTime();
-        duration = endTime - startTime;
-        System.out.println("Vector get: " + duration);
+        timespan = endTime - startTime;
+        System.out.println("Vector get: " + timespan);
 
         System.out.println();
 
@@ -81,8 +81,8 @@ public class LL_AL_Vector_PerformanceComparison {
             arrayList.remove(i);
         }
         endTime = System.nanoTime();
-        duration = endTime - startTime;
-        System.out.println("ArrayList remove:  " + duration);
+        timespan = endTime - startTime;
+        System.out.println("ArrayList remove:  " + timespan);
 
         /* remove() operation in LinkedList */
         startTime = System.nanoTime();
@@ -91,8 +91,8 @@ public class LL_AL_Vector_PerformanceComparison {
             linkedList.remove(i);
         }
         endTime = System.nanoTime();
-        duration = endTime - startTime;
-        System.out.println("LinkedList remove: " + duration);
+        timespan = endTime - startTime;
+        System.out.println("LinkedList remove: " + timespan);
 
         /* remove() operation in Vector */
         startTime = System.nanoTime();
@@ -101,7 +101,7 @@ public class LL_AL_Vector_PerformanceComparison {
             vector.remove(i);
         }
         endTime = System.nanoTime();
-        duration = endTime - startTime;
-        System.out.println("Vector remove: " + duration);
+        timespan = endTime - startTime;
+        System.out.println("Vector remove: " + timespan);
     }
 }
