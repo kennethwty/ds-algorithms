@@ -1,5 +1,5 @@
 # ds-algorithms
-Learning as well as reviewing important algorithms & data structures by implementing them in Java.
+Learning as well as reviewing important classic algorithms & data structures by implementing them in Java.
 
 ### Supplementary Books:
 * Introduction to Algorithms (CLRS), 3rd Edition, by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein
@@ -8,12 +8,12 @@ Learning as well as reviewing important algorithms & data structures by implemen
 * The Algorithm Design Manual, 2nd Edition, by Steven Skiena
 
 ### Online Resources:
-* Data Structures and Algorithms: Deep Dive Using Java, by Sarah Ettritch on Udemy <br>
 * Algorithms, by Robert Sedgewick & Kevin Wayne on Coursera <br>
 * Algorithms: Design and Analysis, by Tim Roughgarden on Stanford Lagunita <br>
+* Data Structures and Algorithms: Deep Dive Using Java, by Sarah Ettritch on Udemy <br>
 
 ### Tips & Tricks That I Follow:
-* Day 1: 
+* Day 1 of Learning a Data Structure or Algorithm: 
   * Understand the ins & outs of a data structure or an algorithm from the theory side before looking at any code.
   * Write pseudocodes for them.
   * Think about different small test cases and experiment with them on paper or whiteboard. For example, if I am reviewing QuickSort, I would come up with a few short lists of numbers and sort them on whiteboard using the QuickSort concept.
