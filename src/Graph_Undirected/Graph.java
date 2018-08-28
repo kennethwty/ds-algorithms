@@ -1,6 +1,5 @@
-package UndirectedGraph;
+package Graph_Undirected;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.Scanner;
@@ -92,7 +91,7 @@ public class Graph {
 
 
     public static void main(String[] args) throws IOException {
-        Scanner scanner = new Scanner(new File("src/UndirectedGraph/test.txt"));
+        Scanner scanner = new Scanner(new File("src/Graph_Undirected/test.txt"));
         Graph undirectedGraph = new Graph(scanner);
         System.out.print(undirectedGraph.toString());
     }

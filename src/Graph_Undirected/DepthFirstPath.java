@@ -1,9 +1,8 @@
-package UndirectedGraph;
+package Graph_Undirected;
 
 import LinkedList_Stack_Queue.Stack;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -54,7 +53,7 @@ public class DepthFirstPath {
         // for user input
         Scanner keyboard = new Scanner(System.in);
         // read the file and create a Graph object
-        Scanner scanner = new Scanner(new File("src/UndirectedGraph/test2.txt"));
+        Scanner scanner = new Scanner(new File("src/Graph_Undirected/test2.txt"));
         Graph undirectedGraph = new Graph(scanner);
         System.out.print(undirectedGraph.toString());
 

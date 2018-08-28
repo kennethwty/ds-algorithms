@@ -1,4 +1,4 @@
-package UndirectedGraph;
+package Graph_Undirected;
 
 import LinkedList_Stack_Queue.*;
 
@@ -47,7 +47,7 @@ public class ConnectedComponent {
 
     public static void main(String[] args) throws IOException {
         // read the file and create a Graph object
-        Scanner scanner = new Scanner(new File("src/UndirectedGraph/test.txt"));
+        Scanner scanner = new Scanner(new File("src/Graph_Undirected/test.txt"));
         Graph undirectedGraph = new Graph(scanner);
         System.out.print(undirectedGraph.toString());
         System.out.println();
