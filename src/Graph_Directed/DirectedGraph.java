@@ -1,4 +1,4 @@
-package DirectedGraph;
+package Graph_Directed;
 
 import java.io.IOException;
 import java.util.LinkedList;
@@ -43,6 +43,11 @@ public class DirectedGraph {
     public void addEdge(int v1, int v2) {
         adjList[v1].addFirst(v2);
         E++;
+    }
+
+    // return number of outgoing edges
+    public int outdegree(int v) {
+        return adjList[v].size();
     }
 
     public int getV() {
