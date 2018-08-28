@@ -56,17 +56,4 @@ public class DirectedGraph {
     public Iterable<Integer> adjacencyList(int vertex) {
         return adjList[vertex];
     }
-
-    @Override
-    public String toString() {
-        String str = V + " vertices, " + E + " edges.\n";
-        for(int i = 0; i < V; i++) {
-            str = str + i + ": ";
-            for(int v2 : this.adjacencyList(i)) {
-                str = str + v2 + " ";
-            }
-            str = str + "\n";
-        }
-        return str;
-    }
 }
