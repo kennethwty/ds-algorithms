@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-// Directed Graph ADT
+// A Simple Directed Graph ADT
 public class DirectedGraph {
     private final int V;
     private int E;
@@ -12,10 +12,11 @@ public class DirectedGraph {
     private LinkedList<Integer>[] adjList;
 
     public DirectedGraph(int V) {
+        if(V < 0) throw new IllegalArgumentException("Negative number of vertices unaccepted.");
+
         this.V = V;
         this.E = 0;
-        this.source = source;
-        adjList = new LinkedList[V];
+        adjList = (LinkedList<Integer>[]) new LinkedList[V];
         for(int v = 0; v < V; v++) {
             adjList[v] = new LinkedList<>();
         }
