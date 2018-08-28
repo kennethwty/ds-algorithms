@@ -8,7 +8,6 @@ import java.util.Scanner;
 public class DirectedGraph {
     private final int V;
     private int E;
-    private int source;
     private LinkedList<Integer>[] adjList;
 
     public DirectedGraph(int V) {
