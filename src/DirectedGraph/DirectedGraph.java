@@ -69,15 +69,4 @@ public class DirectedGraph {
         }
         return str;
     }
-
-    /*
-    Uncomment this section if tests are needed for this ADT.
-
-
-    public static void main(String[] args) throws IOException {
-        Scanner scanner = new Scanner(new File("src/UndirectedGraph/test.txt"));
-        Graph undirectedGraph = new Graph(scanner);
-        System.out.print(undirectedGraph.toString());
-    }
-    */
 }
