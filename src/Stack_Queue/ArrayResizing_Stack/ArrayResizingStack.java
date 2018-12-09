@@ -1,4 +1,4 @@
-package ArrayResizing_Stack;
+package Stack_Queue.ArrayResizing_Stack;
 import java.util.Iterator; //for the use foreach statements to loop thru the collection
 
 public class ArrayResizingStack<Item> implements Iterable<Item> {

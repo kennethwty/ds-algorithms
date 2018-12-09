@@ -1,4 +1,4 @@
-package ArrayResizing_Stack;
+package Stack_Queue.ArrayResizing_Stack;
 
 
 //Test the Array Resizing Stack

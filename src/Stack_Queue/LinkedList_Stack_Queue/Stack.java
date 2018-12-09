@@ -1,4 +1,4 @@
-package LinkedList_Stack_Queue;
+package Stack_Queue.LinkedList_Stack_Queue;
 
 import java.util.*; //Iterator
 

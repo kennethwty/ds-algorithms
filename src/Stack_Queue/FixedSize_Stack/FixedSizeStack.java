@@ -1,7 +1,7 @@
 /*
     This fixed-size array can be used to store elements other than String's.
  */
-package FixedSize_Stack;
+package Stack_Queue.FixedSize_Stack;
 
 public class FixedSizeStack<Item> {
     private Item[] item; //holding the String input elements

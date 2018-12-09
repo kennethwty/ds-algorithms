@@ -1,4 +1,5 @@
-package FixedSize_Stack;
+package Stack_Queue.FixedSize_Stack;
+
 import java.util.*;
 
 public class FixedSizeStack_Client {

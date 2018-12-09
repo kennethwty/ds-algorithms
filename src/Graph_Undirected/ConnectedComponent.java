@@ -1,6 +1,6 @@
 package Graph_Undirected;
 
-import LinkedList_Stack_Queue.*;
+import Stack_Queue.LinkedList_Stack_Queue.Queue;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package LinkedList_Stack_Queue;
+package Stack_Queue.LinkedList_Stack_Queue;
 
 //package access only
 class Node<Item> {
