@@ -14,33 +14,37 @@ Learning as well as reviewing important classic algorithms & data structures by 
 
 ### Recommendation on How to Use the ABOVE Resources:
 I had a rough start when I first started learning these materials because I wasn't sure how the materials fit into the "big picture", so I hope the following advice will somehow save you some time hopping around looking for advice on WHAT TO LEARN FIRST & WHAT TO LEARN NEXT.
-1. Be familiar with a programming language before you start (I'd recommend Java/Python/C++)
-   * Assuming you are using Java, it would be helpful if you know the following Java concepts:
+1. Be familiar with a programming language (I'd recommend Java/Python/C++)
+   * Assuming you are using Java, it would be extremely helpful and easier for you to understand the materials if you already know the following intermediate Java SE concepts before you begin 2 below:
      * Generics
-     * Comparators (Even Better: w/ Lambda Expression)
+     * Comparators
      * Iterators
-     * I/O (Even Better: NIO)
-     * Extremely Helpful:
-       * Collections
-       * Design Patterns
+     * I/O
+     * Collections
+     * Design Patterns
+     * Even Better:
+        * NIO
+        * Lambda Expressions
+        * Java 8 Stream API
        
-2. Read Prof. Robert Sedewick's Algorithm textbook + Take his two courses on Coursera (Algorithm Part I & II)
-   * This book is for the second course in a typical CS program which focuses on the most important Data Structures and their associated algorithms. The writing style is a bit dry but the diagrams are golds!
-   * Some people recommend Prof. Steven Skiena's book over this one. I strongly disagree because you simply can't master algorithms without a strong foundation of data structures. And Prof. Skiena's book only has 1 chapter on data structures and only briefly talks about them (good for reviewing, not learning).
+2. Read Prof. Robert Sedgewick's Algorithm textbook + Take his two courses on Coursera (Algorithm Part I & II)
+   * This book is for the second course in a typical CS program which focuses on the most important Data Structures and their associated algorithms. The writing style is a bit dry but the diagrams are GOLDs!
+   * Some people recommend Prof. Steven Skiena's The Algorithm Design Manual text over this one. I strongly disagree because you definitely need a good understanding of the fundamental data structures to understand the algorithms mentioned in Prof. Skiena's book. Prof. Skiena's book only has 1 chapter on data structures and only briefly talks about them (good for reviewing, not learning from the ground up).
    
 3. Read Prof. Steven Skiena's The Algorithm Design Manual textbook + Take his Stonybrook courses online (optional)
    * This book is for the third course in a typical CS program (usually named "Design and Analysis of Algorithms")
-   * This book explains many difficult concepts in an easy-to-understand way and Prof. Skiena's writting style is more fun to read in my opinion. All the jokes and interesting real-world examples make learning algorithms fun.
+   * This book focuses on algorithm **design** techniques rather than simply explaining algorithms like Prof. Sedgewick's book does. The materials are grouped together in a way that is better than Prof. Sedgewick's book IMO.
+   * It explains many difficult concepts in an easy-to-understand way and Prof. Skiena's writting style is more fun to read in my opinion. All the jokes and interesting real-world examples make learning algorithms fun.
    * You need a good understanding of data structures to understand the materials. It briefly explains some important ones.
    
 4. Use CLRS as a reference
    * CLRS is a really comprehensive and math-heavy text on algorithms. It is not meant to be read from cover to cover (although you can if you want to). I'd recommend using this text as a reference to review the materials that you have learned from the above two texts or learn some extra algorithms that the above two texts don't cover.
    
 5. Practice solving algorithmic problems on LeetCode.com or from the "Cracking the Coding Interview" book
-   * By now, you should already have a good understanding of the core data structures and some algorithm design techniques (Divide & Conquer, Greedy, Backtracking, Dynamic Programming, etc.). Knowing the concepts is already a big step forward. Now, it is time to practice solving algorithmic problems.
-   * I'd recommend solving the problems from [this list](https://www.educative.io/collection/5642554087309312/5679846214598656). You don't have to pay for this. You can find the problems on GeeksforGeeks or LeetCode and then solve them there.
-   * I'd also recommend solving the problems **conceptually** (drawing diagrams and write possibly pseudocode) on a whiteboard and then code them out on the sites.
-   * You can also buy the highly popular "Cracking the Coding Interview" and solve the problems on a whiteboard or IDE.
+   * By now, you should already have a good understanding of the core data structures and some algorithm design techniques (Divide & Conquer, Greedy, Backtracking, Dynamic Programming, Brute Force, etc.). Knowing the concepts is already a big step forward. Now, it is time to practice solving algorithmic problems.
+   * I'd recommend solving the problems from [this list](https://www.educative.io/collection/5642554087309312/5679846214598656) first because it groups problems into categories. Again, having a "big picture" or a mind map of what you need to learn in a sequencial way is really helpful. It saves you a lo t of time from overly thinking "What am I missing?" and "What category does this problem fall into?". **You don't have to pay for this. You can find the problems on GeeksforGeeks or LeetCode and then solve them there for free.**
+   * I'd also recommend solving the problems **conceptually** (drawing diagrams and possibly writing pseudocodes) on a whiteboard and then code them out on the sites.
+   * You can also buy the popular "Cracking the Coding Interview" and solve the problems on a whiteboard or IDE. Keep in mind that the solutions on the book might have errors, so be sure to take a look at its errata site after you solve the problem!
    
 ### Tips & Tricks That I Follow:
 * Day 1 of Learning a Data Structure or Algorithm: 
