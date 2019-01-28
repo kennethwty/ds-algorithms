@@ -19,6 +19,7 @@ public class MergeSort {
      * @param end ending index + 1
      */
     public static void mergesort(int[] arr, int start, int end) {
+        // conceptually dividing the original array into single element array
         // if the array has only 1 element, return
         if(end - start < 2)
             return;
@@ -30,7 +31,7 @@ public class MergeSort {
         mergesort(arr, start, mid);
         // sort the second half (right sub-array)
         mergesort(arr, mid, end);
-        // merge the two sort sub-arrays
+        // merge the two sorted sub-arrays
         merge(arr, start, mid, end);
     }
 
@@ -51,7 +52,8 @@ public class MergeSort {
         }
 
         // if there are leftovers in the right sub-array, do nothing
-        // if there are leftovers in the left sub-array, copy them to the temp array
+        // if there are leftovers in the left sub-array, copy them to the end of original array
+        // finally, copy the elements in the temp array back to the original array
         System.arraycopy(arr, i, arr, start + index, mid - i);
         System.arraycopy(temp, 0, arr, start, index);
     }
