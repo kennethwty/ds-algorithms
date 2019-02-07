@@ -30,6 +30,7 @@ public class Singly_LinkedList<Item> {
         while(temp.next != null) {
             if(temp.next.item == item) {
                 temp.next = temp.next.next;
+                return;
             }
             temp = temp.next;
         }
